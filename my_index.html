@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏知识安全答题王</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/buttons.css">
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/button_list.css">
+
+</head>
+<body>
+    <div class="Background_Img">
+        <img src="img/background.png" >
+    </div>
+    <div class="Choose_Model"></div>
+    <div class="Button_List" id="start">
+        <img src="img/start.png" >
+    </div>
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+
+</body>
+<script type="text/javascript">
+          $(document).ready(function(){
+            $("#start").on("click",function(){
+                window.location.href="question.html";
+            });
+
+        });
+
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href="css/myresult.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".butt_list").on("click",function(){
+                window.location.href="my_index.html";
+            });
+            var url=document.URL;
+            var getVal=url.split("?")[1];
+             var goal=getVal.split("=")[1];//获取goal的值
+            //goal=96;
+
+            if(goal>=90)
+            {
+                $(".show_result img").attr("src","img/high_player.png");
+                $(".final_goal").text(goal);
+            }
+            if(goal<90&&goal>=60)
+            {
+                $(".show_result img").attr("src", "img/middle_player.png");
+                $(".final_goal").text(goal);
+            }
+            if(goal<60)
+            {
+                $(".show_result img").attr("src","img/new_player.png");
+                $(".final_goal").text(goal);
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <div class="background">
+        <img src="img/background2.png">
+    </div>
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+    <div class="show_result">
+        <img src="img/new_player.png">
+    </div>
+    <div class="butt_list">
+        <img src="img/tryagain.png" id="try_again">
+        <img src="img/stop.png">
+    </div>
+    <div class="final_goal">0</div>
+</body>
+
+</html>

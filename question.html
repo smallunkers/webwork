@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏知识安全答题王</title>
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel ="stylesheet" href="css/myquestion.css">
+</head>
+<body>
+    <div class="background_img">
+        <img src="img/background2.png">
+    </div>
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
+    <div class="progress_wrap">
+        <span class="Time_out" >  15S</span>
+        <div class="progress" >
+            <div class="progress-bar progress-bar-warning" id="progress_bar"     role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+         style="width: 100%">
+            </div>
+        </div>
+    </div>
+    <div class="goal">
+        <img src="img/champ.png">
+        <span>得分:0</span>
+    </div>
+    <div class="Question_Num">
+        <span >1/25</span>
+    </div>
+    <div class="container">
+        <span id="main_question">
+        </span>
+        <br>
+        <span class="choose" id="choose_a"></span>
+        <br>
+        <span class="choose" id="choose_b"> </span>
+        <br>
+        <span class="choose" id="choose_c"> </span>
+        <br>
+        <span class="choose" id="choose_d"> </span>
+        <br>
+
+    </div>
+    <div class="Choose_Button_Wrap">
+        <div class="butt_wrap" index="A">
+            <img src="img/buttona.png"class="butt" id="click_a" >
+        </div>
+        <div class="butt_wrap" index="B">
+            <img src="img/buttonb.png"class="butt" id="click_b" >
+
+        </div>
+        <div class="butt_wrap" index="C">
+            <img src="img/buttonc.png"class="butt" id="click_c" >
+
+        </div>
+        <div class="butt_wrap" index="D">
+            <img src="img/buttond.png"class="butt"  id="click_d" >
+
+        </div>
+
+    </div>
+    <div class="Sure_Button_Wrap">
+        <img src="img/sure.png" id="Sure" style="visibility: hidden">
+        <img src="img/back.png" id="Back" >
+
+    </div>
+    <div class="information">
+        <img src="img/right.png">
+    </div>
+
+</body>
+<script type="text/javascript" src="myjs/progress_bar.js"></script>
+
+</html>
